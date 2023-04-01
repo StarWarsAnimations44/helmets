@@ -1,0 +1,7 @@
+serviceDiplomatique { https://starwars.fandom.com/fr/wiki/Service_diplomatique
+
+	CC_4477_Thire
+	CT_xxxx_Jek
+	CT_xxxx_Rys
+
+}
