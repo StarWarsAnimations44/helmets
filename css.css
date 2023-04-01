@@ -345,16 +345,17 @@ div {
 ========================================================================================================================
 */
 
-#titleAurbesh img {
+#titleAurebesh img {
 
 	width: 5%;
 	margin-bottom: -0.5%;
 	margin-right: -0.5%;
 	margin-left: -0.5%;
+	transition: opacity 1s ease-in-out;
 
 }
 
-#titleAurbesh .aurebeshNumbers {
+#titleAurebesh .aurebeshNumbers {
 
 	width: 4%;
 	margin-bottom: -0.8%;
