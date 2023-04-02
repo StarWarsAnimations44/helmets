@@ -1,14 +1,12 @@
 /* ================================================================================================================== */
 /*                                                                                                                    */
-/*                                               Star Wars Animations 44                                              */
+/*                                                Star Wars Animations 44                                             */
 /*                                                                                                                    */
 /* ================================================================================================================== */
 
-/*
-========================================================================================================================
-	<.../>
-========================================================================================================================
-*/
+/* ================================================================================================================== */
+/*	<...>*/
+/* ================================================================================================================== */
 
 body {
 
@@ -42,10 +40,7 @@ table {
 
 }
 
-table a {
-
-	font-weight: normal;
-}
+table a {font-weight: normal;}
 
 th {
 
@@ -86,11 +81,7 @@ a {
 
 }
 
-a:hover {
-
-	color: #abcdef;
-
-}
+a:hover {color: #abcdef;}
 
 button {
 
@@ -124,17 +115,11 @@ p {
 
 }
 
-div {
+div {position: relative;}
 
-	position: relative;
-
-}
-
-/*
-========================================================================================================================
-	class = "..."
-========================================================================================================================
-*/
+/* ================================================================================================================== */
+/*	class = "..."*/
+/* ================================================================================================================== */
 
 .tdText {
 
@@ -144,11 +129,7 @@ div {
 
 }
 
-.icon {
-
-	width: 3%;
-
-}
+.icon {	width: 3%;}
 
 .tdVoid {
 
@@ -171,41 +152,16 @@ div {
 
 }
 
-.tableText td {
+.tableText td {padding: 1%;}
 
-	padding: 1%;
+/* ================================================================================================================== */
+/*	gestion des plans*/
+/* ================================================================================================================== */
 
-}
-
-/*
-========================================================================================================================
-	gestion des plans
-========================================================================================================================
-*/
-
-.foreground, .foregroundTall {
-
-	left: 12.5%;
-
-}
-
-.foreground2, .foregroundTall2 {
-
-	left: 31.3%;
-
-}
-
-.foreground3, .foregroundTall3 {
-
-	left: 37.5%;
-
-}
-
-.foreground4, .foregroundTall4 {
-
-	left: 40.8%;
-
-}
+.foreground, .foregroundTall {left: 12.5%;}
+.foreground2, .foregroundTall2 {left: 31.3%;}
+.foreground3, .foregroundTall3 {left: 37.5%;}
+.foreground4, .foregroundTall4 {left: 40.8%;}
 
 .foreground5, .foregroundTall5 {
 
@@ -215,8 +171,7 @@ div {
 
 }
 
-.foreground, .foregroundTall, .foreground2, .foregroundTall2, .foreground3, .foregroundTall3, .foreground4, .foregroundTall4, .foreground5, .foregroundTall5 {
-	/* tous les premiers plans doivent avoir ces paramètres */
+.foreground, .foregroundTall, .foreground2, .foregroundTall2, .foreground3, .foregroundTall3, .foreground4, .foregroundTall4, .foreground5, .foregroundTall5 { /* all foregrounds must have these settings */
 
 	position: absolute;
 	top: 0;
@@ -224,126 +179,38 @@ div {
 
 }
 
-.foregroundTall, .foregroundTall3, .foregroundTall4 {
-	/* tous les premiers plans de type haut doivent êtres recentrés */
+.foregroundTall, .foregroundTall2, .foregroundTall3, .foregroundTall4 {top: -5%;}
+/* all foregrounds of "tall" type must be recentered */
 
-	top: -5%;
+/* ================================================================================================================== */
+/*	resize images in multi-item columns*/
+/* ================================================================================================================== */
 
-}
+.colspan2 img {width: 37.5%;}
+.colspan3 img {width: 25%;}
+.colspan4 img {width: 18.5%;}
+.colspan5 img {width: 14.9%;}
 
-/*
-========================================================================================================================
-	redimensionner les images dans les colones plus larges
-========================================================================================================================
-*/
+/* ================================================================================================================== */
+/*	each unit has its own color*/
+/* ================================================================================================================== */
 
-.colspan2 img {
+.battalion104 {background-color: #585858;}
+.battalionAttack169 {background-color: #901d18;}
+.battalionAttack212 {background-color: #ff7f27;}
+.companyTango {background-color: #688ea9;}
+.corpsElite41 {background-color: #0b3416;}
+.corpsNova21 {background-color: #643264;}
+.corpsReconnaissanceMobile91 {background-color: #e21c1c;}
+.corpsStar327 {background-color: #f0be28;}
+.guardCoruscent {background-color: #88001b;}
+.legion7 {background-color: #af8867;}
+.legion501 {background-color: #0000a0;}
+.securityKamino {background-color: #0000a0;}
 
-	width: 37.5%;
-
-}
-
-.colspan3 img {
-
-	width: 25%;
-
-}
-
-.colspan4 img {
-
-	width: 18.5%;
-
-}
-
-.colspan5 img {
-
-	width: 14.9%;
-
-}
-
-/*
-========================================================================================================================
-	chaque unité a une couleur caractéristique
-========================================================================================================================
-*/
-
-.battalion104 {
-
-	background-color: #585858;
-
-}
-
-.battalionAttack169 {
-
-	background-color: #901d18;
-
-}
-
-.battalionAttack212 {
-
-	background-color: #ff7f27;
-
-}
-
-.companyTango {
-
-	background-color: #688ea9;
-
-}
-
-.corpsElite41 {
-
-	background-color: #0b3416;
-
-}
-
-.corpsNova21 {
-
-	background-color: #643264;
-
-}
-
-.corpsReconnaissanceMobile91 {
-
-	background-color: #e21c1c;
-
-}
-
-.corpsStar327 {
-
-	background-color: #f0be28;
-
-}
-
-.guardCoruscent {
-
-	background-color: #88001b;
-
-}
-
-.legion7 {
-
-	background-color: #af8867;
-
-}
-
-.legion501 {
-
-	background-color: #0000a0;
-
-}
-
-.securityKamino {
-
-	background-color: #0000a0;
-
-}
-
-/*
-========================================================================================================================
-	id  = "..."
-========================================================================================================================
-*/
+/* ================================================================================================================== */
+/*	id = "..."*/
+/* ================================================================================================================== */
 
 #titleAurebesh img {
 
@@ -351,7 +218,6 @@ div {
 	margin-bottom: -0.5%;
 	margin-right: -0.5%;
 	margin-left: -0.5%;
-	transition: opacity 1s ease-in-out;
 
 }
 
@@ -359,13 +225,48 @@ div {
 
 	width: 4%;
 	margin-bottom: -0.8%;
-	margin-right: -0.5%;
-	margin-left: -0.5%;
+
+}
+
+#divTable {
+
+	overflow-x: auto;
+	scrollbar-placement: outside;
 
 }
 
 /* ================================================================================================================== */
+/*	scrollbar*/
+/* ================================================================================================================== */
+
+/*::-webkit-scrollbar {
+
+	width: 10px;
+	height: 10px;
+
+}*/
+
+/*::-webkit-scrollbar-track {
+
+	background-color: transparent;
+	background-color: blue;
+
+}*/
+
+/*::-webkit-scrollbar-thumb {
+
+	background-color: #fedcba;
+
+}*/
+
+/*::-webkit-scrollbar-thumb:hover {
+
+	background-color: #abcdef;
+
+}*/
+
+/* ================================================================================================================== */
 /*                                                                                                                    */
-/*                                               Star Wars Animations 44                                              */
+/*                                                Star Wars Animations 44                                             */
 /*                                                                                                                    */
 /* ================================================================================================================== */

@@ -84,12 +84,9 @@ function englishAubresh() {
 
 	);
 
-	// titleAurebesh.style.transition = "opacity 1s ease-in-out";
-	// titleEnglish.style.transition = "opacity 1s ease-in-out";
-
 }
 
-function backgroundSwitch2() {
+function periodicBackground2() {
 
 	"use strict";
 
@@ -130,7 +127,7 @@ function backgroundSwitch2() {
 
 }
 
-function backgroundSwitch3() { // pas utilisée dans le code :(
+function periodicBackground3() { // pas utilisée dans le code :(
 
 	"use strict";
 
@@ -189,7 +186,7 @@ function backgroundSwitch3() { // pas utilisée dans le code :(
 
 }
 
-function backgroundSwitch4() {
+function periodicBackground4() {
 
 	"use strict";
 
@@ -268,7 +265,7 @@ function backgroundSwitch4() {
 
 }
 
-function backgroundSwitch5() {
+function periodicBackground5() {
 
 	"use strict";
 
@@ -287,7 +284,79 @@ function backgroundSwitch5() {
 
 		function() {
 
-			// à copier sur 4
+			if (background55[0].style.display === "none") {
+
+				if (background45[0].style.display === "none") {
+
+					if (background35[0].style.display === "none") {
+
+						if (background25[0].style.display === "none") {
+
+							for (var i = background15.length - 1; i >= 0; i--) {
+
+								background15[i].style.display = "none";
+								background25[i].style.display = "block";
+								background35[i].style.display = "none";
+								background45[i].style.display = "none";
+								background55[i].style.display = "none";
+
+							}
+
+						} else {
+
+							for (var i = background15.length - 1; i >= 0; i--) {
+
+								background15[i].style.display = "none";
+								background25[i].style.display = "none";
+								background35[i].style.display = "block";
+								background45[i].style.display = "none";
+								background55[i].style.display = "none";
+
+							}
+
+						}
+
+					} else {
+
+						for (var i = background15.length - 1; i >= 0; i--) {
+
+							background15[i].style.display = "none";
+							background25[i].style.display = "none";
+							background35[i].style.display = "none";
+							background45[i].style.display = "block";
+							background55[i].style.display = "none";
+
+						}
+
+					}
+
+				} else {
+
+					for (var i = background15.length - 1; i >= 0; i--) {
+
+						background15[i].style.display = "none";
+						background25[i].style.display = "none";
+						background35[i].style.display = "none";
+						background45[i].style.display = "none";
+						background55[i].style.display = "block";
+
+					}
+
+				}
+
+			} else {
+
+				for (var i = background15.length - 1; i >= 0; i--) {
+
+					background15[i].style.display = "block";
+					background25[i].style.display = "none";
+					background35[i].style.display = "none";
+					background45[i].style.display = "none";
+					background55[i].style.display = "none";
+
+				}
+
+			}
 
 		},
 
