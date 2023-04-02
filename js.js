@@ -4,17 +4,17 @@
 //                                                                                                                    //
 // ================================================================================================================== //
 
-const wait = 1500; // miliseconds
+var backgroundIsDisplayed = true;
+var sources = [];
+var displayedBackgroundColor = "transparent";
+var hiddenBackgroundColor = "#ffffff";
+const helmetsBackgrounds = document.getElementsByClassName("background");
+const buttons = document.getElementsByTagName("button");
+const wait = 1000; // miliseconds
 
 function toggleBackground() {
 
 	"use strict";
-	var backgroundIsDisplayed = true;
-	var sources = [];
-	var displayedBackgroundColor = "transparent";
-	var hiddenBackgroundColor = "#ffffff";
-	const helmetsBackgrounds = document.getElementsByClassName("background");
-	const buttons = document.getElementsByTagName("button");
 
 	if (backgroundIsDisplayed) {
 
