@@ -4,32 +4,32 @@
 //                                                                                                                    //
 // ================================================================================================================== //
 
-var backgroundIsDisplayed = true;
-var sources = [];
-var displayedBackgroundColor = "transparent";
-var hiddenBackgroundColor = "#ffffff";
-const backgroundElements = document.getElementsByClassName("background");
-const buttonsList = document.getElementsByTagName("button");
-const wait = 1500 // miliseconds
+const wait = 1500; // miliseconds
 
 function toggleBackground() {
 
 	"use strict";
+	var backgroundIsDisplayed = true;
+	var sources = [];
+	var displayedBackgroundColor = "transparent";
+	var hiddenBackgroundColor = "#ffffff";
+	const helmetsBackgrounds = document.getElementsByClassName("background");
+	const buttons = document.getElementsByTagName("button");
 
 	if (backgroundIsDisplayed) {
 
 		backgroundIsDisplayed = false;
 
-		for (var i = 0; i < buttonsList.length; i++) {
+		for (var i = 0; i < buttons.length; i++) {
 
-			buttonsList[i].style.backgroundColor = hiddenBackgroundColor;
+			buttons[i].style.backgroundColor = hiddenBackgroundColor;
 
 		}
 
-		for (var j = 0; j < backgroundElements.length; j++) {
+		for (var j = 0; j < helmetsBackgrounds.length; j++) {
 
-			sources[j] = backgroundElements[j].src;
-			backgroundElements[j].src = "models/void.png";
+			sources[j] = helmetsBackgrounds[j].src;
+			helmetsBackgrounds[j].src = "models/void.png";
 
 		}
 
@@ -37,15 +37,15 @@ function toggleBackground() {
 
 		backgroundIsDisplayed = true;
 
-		for (var k = 0; k < buttonsList.length; k++) {
+		for (var k = 0; k < buttons.length; k++) {
 
-			buttonsList[k].style.backgroundColor = displayedBackgroundColor;
+			buttons[k].style.backgroundColor = displayedBackgroundColor;
 
 		}
 
-		for (var m = 0; m < backgroundElements.length; m++) {
+		for (var m = 0; m < helmetsBackgrounds.length; m++) {
 
-			backgroundElements[m].src = sources[m];
+			helmetsBackgrounds[m].src = sources[m];
 
 		}
 

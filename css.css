@@ -231,7 +231,6 @@ div {position: relative;}
 #divTable {
 
 	overflow-x: auto;
-	scrollbar-placement: outside;
 
 }
 
