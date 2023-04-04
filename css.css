@@ -10,7 +10,7 @@
 
 body {
 
-	background: url("page.png") center fixed no-repeat;
+	background: url(page.png) center fixed no-repeat;
 	background-size: cover;
 	margin: 5%;
 	text-align: center;
@@ -120,7 +120,7 @@ p {
 div {position: relative;}
 
 /* ================================================================================================================== */
-/*	class = "..."*/
+/*	class = ...*/
 /* ================================================================================================================== */
 
 .tdText {
@@ -175,7 +175,7 @@ div {position: relative;}
 }
 
 .foregroundTall, .foregroundTall2, .foregroundTall3, .foregroundTall4 {top: -5%;}
-/* all foregrounds of "tall" type must be recentered */
+/* all foregrounds of tall type must be recentered */
 
 /* ================================================================================================================== */
 /*	resize images in multi-item columns*/
@@ -203,9 +203,13 @@ div {position: relative;}
 .legion501 {background-color: #0000a0;}
 .securityKamino {background-color: #0000a0;}
 
+.niteOwls {background-color: #185387}
+
 /* ================================================================================================================== */
-/*	id = "..."*/
+/*	id = ...*/
 /* ================================================================================================================== */
+
+#divTable {overflow-x: auto;}
 
 #titleAurebesh img {
 
@@ -223,7 +227,25 @@ div {position: relative;}
 
 }
 
-#divTable {overflow-x: auto;}
+#titleMandoa img {
+
+	width: 3%;
+	margin-top: -0.5%;
+	margin-bottom: -1.3%;
+	margin-right: -0.5%;
+	margin-left: -0.5%;
+
+}
+
+#titleMandoa .mandoaNumbers {
+
+	width: 2%;
+	margin-top: -0.5%;
+	margin-bottom: -1.3%;
+	margin-right: -0.5%;
+	margin-left: -0.5%;
+
+}
 
 /* ================================================================================================================== */
 /*	scrollbar*/

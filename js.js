@@ -56,7 +56,6 @@ function toggleBackground() {
 function englishAubresh() {
 
 	"use strict";
-
 	const titleEnglish = document.getElementById("titleEnglish");
 	const titleAurebesh = document.getElementById("titleAurebesh");
 	titleEnglish.style.display = "block";
@@ -74,6 +73,38 @@ function englishAubresh() {
 			} else {
 
 				titleAurebesh.style.display = "none";
+				titleEnglish.style.display = "block";
+
+			}
+
+		},
+
+		wait
+
+	);
+
+}
+
+function englishMandoa() {
+
+	"use strict";
+	const titleMandoa = document.getElementById("titleMandoa");
+	const titleEnglish = document.getElementById("titleEnglish");
+	titleMandoa.style.display = "none";
+	titleEnglish.style.display = "block";
+
+	setInterval(
+
+		function() {
+
+			if (titleMandoa.style.display === "none") {
+
+				titleMandoa.style.display = "block";
+				titleEnglish.style.display = "none";
+
+			} else {
+
+				titleMandoa.style.display = "none";
 				titleEnglish.style.display = "block";
 
 			}
