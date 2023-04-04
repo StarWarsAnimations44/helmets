@@ -110,8 +110,10 @@ p {
 	margin: auto;
 	border-radius: 20px;
 	text-shadow: 1px 1px 1px #000000;
+	text-align: justify;
+	text-indent: 15%;
 	background-color: rgba(0, 0, 0, 0.25);
-	padding: 5px 5px;
+	padding: 1% 1%;
 
 }
 
@@ -129,20 +131,20 @@ div {position: relative;}
 
 }
 
-.icon {	width: 3%;}
+.icon {width: 3%;}
+
+.pDetails {
+
+	text-align: center;
+	text-indent: 0;
+
+}
 
 .tdVoid {
 
 	border: 0;
 	box-shadow: 0 0 0;
 
-}
-
-.graphics {
-
-	border-radius: 20px;
-	width: 40%;
-	box-shadow: 2px 2px 2px #000000;
 }
 
 .tableText {
@@ -155,21 +157,14 @@ div {position: relative;}
 .tableText td {padding: 1%;}
 
 /* ================================================================================================================== */
-/*	gestion des plans*/
+/*	foreground management*/
 /* ================================================================================================================== */
 
 .foreground, .foregroundTall {left: 12.5%;}
 .foreground2, .foregroundTall2 {left: 31.3%;}
 .foreground3, .foregroundTall3 {left: 37.5%;}
 .foreground4, .foregroundTall4 {left: 40.8%;}
-
-.foreground5, .foregroundTall5 {
-
-	position: absolute;
-	top: 0;
-	left: 42.55%;
-
-}
+.foreground5, .foregroundTall5 {left: 42.55%;}
 
 .foreground, .foregroundTall, .foreground2, .foregroundTall2, .foreground3, .foregroundTall3, .foreground4, .foregroundTall4, .foreground5, .foregroundTall5 { /* all foregrounds must have these settings */
 
@@ -228,11 +223,7 @@ div {position: relative;}
 
 }
 
-#divTable {
-
-	overflow-x: auto;
-
-}
+#divTable {overflow-x: auto;}
 
 /* ================================================================================================================== */
 /*	scrollbar*/
