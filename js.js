@@ -1,8 +1,12 @@
-// ================================================================================================================== //
-//                                                                                                                    //
-//                                                Star Wars Animations 44                                             //
-//                                                                                                                    //
-// ================================================================================================================== //
+// ================================================================================================================= //
+//                                                                                                                   //
+//                                              Star Wars Animations 44                                              //
+//                                                                                                                   //
+// ================================================================================================================= //
+
+// ================================================================================================================= //
+	// variables
+// ================================================================================================================= //
 
 var backgroundIsDisplayed = true;
 var sources = [];
@@ -11,6 +15,10 @@ var hiddenBackgroundColor = "#ffffff";
 const helmetsBackgrounds = document.getElementsByClassName("background");
 const buttons = document.getElementsByTagName("button");
 const wait = 1000; // miliseconds
+
+// ================================================================================================================= //
+
+// ================================================================================================================= //
 
 function toggleBackground() {
 
@@ -52,6 +60,62 @@ function toggleBackground() {
 	}
 
 }
+
+function randomSource() {
+
+	const helmets = document.getElementsByClassName("randomHelmets");
+
+	const helmetsSources = [
+
+		"republic/common/CC_tro_I.png",
+		"republic/common/CT_arc_I.png",
+		"republic/common/CT_arc_II.png",
+		"republic/common/CT_arf_I.png",
+		// "republic/common/CT_arf_II.png",
+		"republic/common/CT_bar_II.png",
+		"republic/common/CT_Captain_I.png",
+		"republic/common/CT_col_I.png",
+		"republic/common/CT_col_II.png",
+		"republic/common/CT_eng_II.png",
+		"republic/common/CT_Lieutenant_I.png",
+		"republic/common/CT_par_II.png",
+		"republic/common/CT_pil_I.png",
+		"republic/common/CT_pil_IIA.png",
+		"republic/common/CT_pil_IIB.png",
+		"republic/common/CT_sco_II.png",
+		"republic/common/CT_Sergeant_I.png",
+		"republic/common/CT_tro_I.png",
+		"republic/common/CT_tro_II.png",
+
+		"mandalorians/common/BobaFett.png",
+		"mandalorians/common/DinDjarin.png",
+		"mandalorians/common/JangoFett.png",
+		"mandalorians/common/PreVizsla.png"
+
+	];
+
+	setInterval(
+
+		function() {
+
+			for (var i = helmets.length - 1; i >= 0; i--) {
+
+				const randomIndex = Math.floor(Math.random() * helmetsSources.length);
+				helmets[i].src = helmetsSources[randomIndex];
+
+			}
+
+		},
+
+		wait * 5 // the animation was too quick
+
+	);
+
+}
+
+// ================================================================================================================= //
+	// languages
+// ================================================================================================================= //
 
 function englishAubresh() {
 
@@ -117,6 +181,10 @@ function englishMandoa() {
 
 }
 
+// ================================================================================================================= //
+	// periodic backgrounds
+// ================================================================================================================= //
+
 function periodicBackground2() {
 
 	"use strict";
@@ -158,7 +226,7 @@ function periodicBackground2() {
 
 }
 
-function periodicBackground3() { // pas utilisée dans le code :(
+function periodicBackground3() { // not used currently
 
 	"use strict";
 
@@ -397,8 +465,8 @@ function periodicBackground5() {
 
 }
 
-// ================================================================================================================== //
-//                                                                                                                    //
-//                                               Star Wars Animations 44                                              //
-//                                                                                                                    //
-// ================================================================================================================== //
+// ================================================================================================================= //
+//                                                                                                                   //
+//                                              Star Wars Animations 44                                              //
+//                                                                                                                   //
+// ================================================================================================================= //
