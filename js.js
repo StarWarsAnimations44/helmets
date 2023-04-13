@@ -77,8 +77,8 @@ function randomSource() {
 	setInterval(
 		function() {
 			// if (helmets[0].src === defaultSource) {
-			console.log(helmets[0].src)
-			console.log(helmets[0].src === "common/random.png")
+			// console.log(helmets[0].src)
+			// console.log(helmets[0].src === "common/random.png")
 			// if (helmets[0].src === "common/random.png") {
 				for (var i = helmets.length - 1; i >= 0; i--) {
 					const randomIndex = Math.floor(Math.random() * helmetsSources.length);
