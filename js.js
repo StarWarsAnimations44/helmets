@@ -8,13 +8,14 @@
 	// variables
 // ================================================================================================================= //
 
+const pause = 1000; // miliseconds
+
 var backgroundIsDisplayed = true;
 var sources = [];
 var displayedBackgroundColor = "transparent";
 var hiddenBackgroundColor = "#ffffff";
 const helmetsBackgrounds = document.getElementsByClassName("background");
 const buttons = document.getElementsByTagName("button");
-const wait = 1000; // miliseconds
 
 // ================================================================================================================= //
 	// functions
@@ -23,22 +24,17 @@ const wait = 1000; // miliseconds
 function toggleBackground() {
 
 	"use strict";
-	if (backgroundIsDisplayed) {
-		backgroundIsDisplayed = false;
-		for (var i = 0; i < buttons.length; i++) {
-			buttons[i].style.backgroundColor = hiddenBackgroundColor;
-		}
-		for (var j = 0; j < helmetsBackgrounds.length; j++) {
+	backgroundIsDisplayed = !backgroundIsDisplayed;
+	var backgroundColor = backgroundIsDisplayed ? displayedBackgroundColor : hiddenBackgroundColor;
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].style.backgroundColor = backgroundColor;
+	}
+	for (var j = 0; j < helmetsBackgrounds.length; j++) {
+		if (backgroundIsDisplayed) {
+			helmetsBackgrounds[j].src = sources[j];
+		} else {
 			sources[j] = helmetsBackgrounds[j].src;
 			helmetsBackgrounds[j].src = "models/void.png";
-		}
-	} else {
-		backgroundIsDisplayed = true;
-		for (var k = 0; k < buttons.length; k++) {
-			buttons[k].style.backgroundColor = displayedBackgroundColor;
-		}
-		for (var m = 0; m < helmetsBackgrounds.length; m++) {
-			helmetsBackgrounds[m].src = sources[m];
 		}
 	}
 
@@ -76,22 +72,12 @@ function randomSource() {
 	];
 	setInterval(
 		function() {
-			// if (helmets[0].src === defaultSource) {
-			// console.log(helmets[0].src)
-			// console.log(helmets[0].src === "common/random.png")
-			// if (helmets[0].src === "common/random.png") {
-				for (var i = helmets.length - 1; i >= 0; i--) {
-					const randomIndex = Math.floor(Math.random() * helmetsSources.length);
-					helmets[i].src = helmetsSources[randomIndex];
-				}
-			// } else {
-				// for (var i = helmets.length - 1; i >= 0; i--) {
-					// const randomIndex = Math.floor(Math.random() * helmetsSources.length);
-					// helmets[i].src = defaultSource;
-				// }
-			// }
+			for (var i = helmets.length - 1; i >= 0; i--) {
+				const randomIndex = Math.floor(Math.random() * helmetsSources.length);
+				helmets[i].src = helmetsSources[randomIndex];
+			}
 		},
-		wait * 2 // the animation was too quick
+		pause * 2
 	);
 
 }
@@ -117,7 +103,7 @@ function englishAubresh() {
 				titleEnglish.style.display = "block";
 			}
 		},
-		wait
+		pause
 	);
 
 }
@@ -139,7 +125,7 @@ function englishMandoa() {
 				titleEnglish.style.display = "block";
 			}
 		},
-		wait
+		pause
 	);
 
 }
@@ -169,7 +155,7 @@ function periodicBackground2() {
 				}
 			}
 		},
-		wait
+		pause
 	);
 
 }
@@ -207,7 +193,7 @@ function periodicBackground3() {
 				}
 			}
 		},
-		wait
+		pause
 	);
 
 }
@@ -259,7 +245,7 @@ function periodicBackground4() {
 				}
 			}
 		},
-		wait
+		pause
 	);
 
 }
@@ -327,7 +313,7 @@ function periodicBackground5() {
 				}
 			}
 		},
-		wait
+		pause
 	);
 
 }

@@ -111,7 +111,10 @@ th {
 /*	class = ...*/
 /* ================================================================================================================= */
 
-.icon {width: 3%;}
+.icon {
+	width: 3%;
+	filter: drop-shadow(0px 0px 1px #ffffff);
+}
 
 .pDetails {
 	text-align: center;
@@ -128,6 +131,7 @@ th {
 .tableText td {padding: 1%;}
 
 .tdText {
+	padding: 2px 5px;
 	border: 2px solid #abcdef;
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px #000000;
