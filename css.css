@@ -21,7 +21,7 @@ a:hover {color: #abcdef;}
 table a {font-weight: normal;}
 
 body {
-	background: url(page.png) center fixed no-repeat;
+	background: url(common/page.png) center fixed no-repeat;
 	background-size: cover;
 	margin: 5%;
 	text-align: center;
