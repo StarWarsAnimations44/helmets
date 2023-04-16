@@ -99,12 +99,13 @@ table {
 	background-size: cover;
 }
 
+td {width: 16.67%;}
+
 th {
 	border: 4px solid #abcdef;
 	border-radius: 20px;
 	padding: 10px 10px;
 	box-shadow: 2px 2px 2px #000000;
-	width: 16.67%;
 }
 
 /* ================================================================================================================= */
@@ -137,30 +138,26 @@ th {
 	box-shadow: 2px 2px 2px #000000;
 }
 
-.tdVoid {
-	border: 0;
-	box-shadow: 0 0 0;
-}
+.tdText div {font-family: Baskerville Old Face}
 
 /* ================================================================================================================= */
 /*	foreground management*/
 /* ================================================================================================================= */
 
-.foreground, .foregroundTall {left: 12.5%;}
-.foreground2, .foregroundTall2 {left: 31.3%;}
-.foreground3, .foregroundTall3 {left: 37.5%;}
-.foreground4, .foregroundTall4 {left: 40.8%;}
-.foreground5, .foregroundTall5 {left: 42.55%;}
+.foreground {left: 12.5%;}
+.foreground2 {left: 31.3%;}
+/*.foreground2 {left: 10%;}*/
+.foreground3 {left: 37.5%;}
+.foreground4 {left: 40.8%;}
+.foreground5 {left: 42.55%;}
 
-.foreground, .foregroundTall, .foreground2, .foregroundTall2, .foreground3, .foregroundTall3, .foreground4, .foregroundTall4, .foreground5, .foregroundTall5 { /* all foregrounds must have these settings */
-
+.foreground, .foreground2, .foreground3, .foreground4, .foreground5 {
 	position: absolute;
 	top: 0;
 	filter: drop-shadow(0 0 0);
 }
 
-.foregroundTall, .foregroundTall2, .foregroundTall3, .foregroundTall4 {top: -5%;}
-/* all foregrounds of tall type must be recentered */
+.img18001600 {top: -5%;}
 
 /* ================================================================================================================= */
 /*	resize images in multi-item columns*/
