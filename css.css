@@ -141,35 +141,35 @@ th {
 .tdText div {font-family: Baskerville Old Face}
 
 /* ================================================================================================================= */
-/*	foreground management*/
+/*	foregrounds management*/
 /* ================================================================================================================= */
 
-.foreground {left: 12.5%;}
-.foreground2 {left: 31.3%;}
-/*.foreground2 {left: 10%;}*/
-.foreground3 {left: 37.5%;}
-.foreground4 {left: 40.8%;}
-.foreground5 {left: 42.55%;}
+.foreground {left: 12.50%;}
+.foregroundColspan2 {left: 31.30%;}
+.foregroundColspan3 {left: 37.50%;}
+.foregroundColspan4 {left: 40.80%;}
+.foregroundColspan5 {left: 42.55%;}
 
-.foreground, .foreground2, .foreground3, .foreground4, .foreground5 {
+.foreground, .foregroundColspan2, .foregroundColspan3, .foregroundColspan4, .foregroundColspan5 {
 	position: absolute;
 	top: 0;
 	filter: drop-shadow(0 0 0);
 }
 
-.img18001600 {top: -5%;}
+.img18001600 {top: -5.00%;}
+.img20001600 {top: -5.56%;}
 
 /* ================================================================================================================= */
-/*	resize images in multi-item columns*/
+/*	multi-columns images*/
 /* ================================================================================================================= */
 
-.colspan2 img {width: 37.5%;}
-.colspan3 img {width: 25%;}
-.colspan4 img {width: 18.5%;}
-.colspan5 img {width: 14.9%;}
+.colspan2 img {width: 37.50%;}
+.colspan3 img {width: 25.00%;}
+.colspan4 img {width: 18.50%;}
+.colspan5 img {width: 14.90%;}
 
 /* ================================================================================================================= */
-/*	each unit has its own color*/
+/*	own color of each unit*/
 /* ================================================================================================================= */
 
 .battalion104 {background-color: #585858;}
@@ -189,10 +189,14 @@ th {
 .superCommando {background-color: #64141e}
 
 /* ================================================================================================================= */
-/*	id = ... */
+/*	id = ...*/
 /* ================================================================================================================= */
 
 #divTable {overflow-x: auto;}
+
+/* ================================================================================================================= */
+/*	nav menus*/
+/* ================================================================================================================= */
 
 #iframe {aspect-ratio: 5631 / 1000;}
 
@@ -201,6 +205,10 @@ th {
 
 #iframeMandalorians {aspect-ratio: 4600 / 1000;}
 #iframeMandaloriansUnits {aspect-ratio: 3942 / 1000;}
+
+/* ================================================================================================================= */
+/*	languages*/
+/* ================================================================================================================= */
 
 #titleAurebesh img {
 	width: 5%;
