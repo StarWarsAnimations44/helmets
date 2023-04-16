@@ -17,7 +17,6 @@ a {
 }
 
 a:hover {color: #abcdef;}
-
 table a {font-weight: normal;}
 
 body {
@@ -194,13 +193,11 @@ th {
 /*	nav menus*/
 /* ================================================================================================================= */
 
-#iframe {aspect-ratio: 5631 / 1000;}
-
-#iframeRepublic {aspect-ratio: 4862 / 1000;}
-#iframeRepublicUnits {aspect-ratio: 1912 / 1000;}
-
-#iframeMandalorians {aspect-ratio: 4600 / 1000;}
-#iframeMandaloriansUnits {aspect-ratio: 3942 / 1000;}
+#iframe {aspect-ratio: 5266 / 1000;}
+#iframeMandalorians {aspect-ratio: 4575 / 1000;}
+#iframeMandaloriansUnits {aspect-ratio: 3752 / 1000;}
+#iframeRepublic {aspect-ratio: 4575 / 1000;}
+#iframeRepublicUnits {aspect-ratio: 1866 / 1000;}
 
 /* ================================================================================================================= */
 /*	languages*/
