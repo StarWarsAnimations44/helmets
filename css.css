@@ -130,14 +130,14 @@ th {
 
 .tableText td {padding: 1%;}
 
-.tdText {
+.tdText, .trText td {
 	padding: 2px 5px;
 	border: 2px solid #abcdef;
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px #000000;
 }
 
-.tdText div {font-family: Baskerville Old Face}
+.trText td div {font-family: Baskerville Old Face}
 
 /* ================================================================================================================= */
 /*	foregrounds management*/
