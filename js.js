@@ -82,47 +82,29 @@ function randomSource() {
 
 }
 
-// ================================================================================================================= //
-	// languages
-// ================================================================================================================= //
-
-function englishAubresh() {
+function englishTitleTo(language) {
 
 	"use strict";
-	const titleEnglish = document.getElementById("titleEnglish");
-	const titleAurebesh = document.getElementById("titleAurebesh");
-	titleEnglish.style.display = "block";
-	titleAurebesh.style.display = "none";
+	const englishTitle = document.getElementById("englishTitle");
+	var languageTitle = document.getElementById("englishTitle");
+	switch (language) {
+		case "aurebesh":
+			languageTitle = document.getElementById("aurebeshTitle");
+			break;
+		case "mandoa":
+			languageTitle = document.getElementById("mandoaTitle");
+			break;
+	}
+	englishTitle.style.display = "block";
+	languageTitle.style.display = "none";
 	setInterval(
 		function() {
-			if (titleAurebesh.style.display === "none") {
-				titleAurebesh.style.display = "block";
-				titleEnglish.style.display = "none";
+			if (languageTitle.style.display === "none") {
+				languageTitle.style.display = "block";
+				englishTitle.style.display = "none";
 			} else {
-				titleAurebesh.style.display = "none";
-				titleEnglish.style.display = "block";
-			}
-		},
-		pause
-	);
-
-}
-
-function englishMandoa() {
-
-	"use strict";
-	const titleMandoa = document.getElementById("titleMandoa");
-	const titleEnglish = document.getElementById("titleEnglish");
-	titleMandoa.style.display = "none";
-	titleEnglish.style.display = "block";
-	setInterval(
-		function() {
-			if (titleMandoa.style.display === "none") {
-				titleMandoa.style.display = "block";
-				titleEnglish.style.display = "none";
-			} else {
-				titleMandoa.style.display = "none";
-				titleEnglish.style.display = "block";
+				languageTitle.style.display = "none";
+				englishTitle.style.display = "block";
 			}
 		},
 		pause

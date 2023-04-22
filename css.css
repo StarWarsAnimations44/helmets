@@ -203,19 +203,19 @@ th {
 /*	languages*/
 /* ================================================================================================================= */
 
-#titleAurebesh img {
+#aurebeshTitle img {
 	width: 5%;
 	margin-bottom: -0.5%;
 	margin-right: -0.5%;
 	margin-left: -0.5%;
 }
 
-#titleAurebesh .aurebeshNumbers {
+#aurebeshTitle .aurebeshNumbers {
 	width: 4%;
 	margin-bottom: -0.8%;
 }
 
-#titleMandoa img {
+#mandoaTitle img {
 	width: 3%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;
@@ -223,7 +223,7 @@ th {
 	margin-left: -0.5%;
 }
 
-#titleMandoa .mandoaNumbers {
+#mandoaTitle .mandoaNumbers {
 	width: 2%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;
