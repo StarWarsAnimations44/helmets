@@ -47,7 +47,7 @@ button:hover {
 div {position: relative;}
 td div {font-family: Baskerville Old Face}
 
-h1, .title {
+h1, .divTitle {
 	padding: 10px 10px;
 	border-radius: 30px;
 	color: #ffffff;
@@ -141,13 +141,13 @@ th {
 /*	foregrounds management*/
 /* ================================================================================================================= */
 
-.foreground {left: 12.50%;}
-.foregroundColspan2 {left: 31.30%;}
-.foregroundColspan3 {left: 37.50%;}
-.foregroundColspan4 {left: 40.80%;}
-.foregroundColspan5 {left: 42.55%;}
+.imgForeground {left: 12.50%;}
+.imgForegroundColspan2 {left: 31.30%;}
+.imgForegroundColspan3 {left: 37.50%;}
+.imgForegroundColspan4 {left: 40.80%;}
+.imgForegroundColspan5 {left: 42.55%;}
 
-.foreground, .foregroundColspan2, .foregroundColspan3, .foregroundColspan4, .foregroundColspan5 {
+.imgForeground, .imgForegroundColspan2, .imgForegroundColspan3, .imgForegroundColspan4, .imgForegroundColspan5 {
 	position: absolute;
 	top: 0;
 	filter: drop-shadow(0 0 0);
@@ -156,10 +156,10 @@ th {
 .img18001600 {top: -5.00%;}
 .img20001600 {top: -5.56%;}
 
-.colspan2 img {width: 37.50%;}
-.colspan3 img {width: 25.00%;}
-.colspan4 img {width: 18.50%;}
-.colspan5 img {width: 14.90%;}
+.tdColspan2 img {width: 37.50%;}
+.tdColspan3 img {width: 25.00%;}
+.tdColspan4 img {width: 18.50%;}
+.tdColspan5 img {width: 14.90%;}
 
 /* ================================================================================================================= */
 /*	own color of each unit*/
@@ -208,7 +208,7 @@ th {
 	margin-left: -0.5%;
 }
 
-#aurebeshTitle .aurebeshNumbers {
+#aurebeshTitle .imgAurebeshNumbers {
 	width: 4%;
 	margin-bottom: -0.8%;
 }
@@ -221,7 +221,7 @@ th {
 	margin-left: -0.5%;
 }
 
-#mandoaTitle .mandoaNumbers {
+#mandoaTitle .imgMandoaNumbers {
 	width: 2%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;

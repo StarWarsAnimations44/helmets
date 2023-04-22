@@ -14,7 +14,7 @@ var backgroundIsDisplayed = true;
 var sources = [];
 var displayedBackgroundColor = "transparent";
 var hiddenBackgroundColor = "#ffffff";
-const helmetsBackgrounds = document.getElementsByClassName("background");
+const helmetsBackgrounds = document.getElementsByClassName("imgBackground");
 const buttons = document.getElementsByTagName("button");
 
 // ================================================================================================================= //
@@ -119,8 +119,8 @@ function englishTitleTo(language) {
 function periodicBackground2() {
 
 	"use strict";
-	const background12 = document.getElementsByClassName("background-1-2");
-	const background22 = document.getElementsByClassName("background-2-2");
+	const background12 = document.getElementsByClassName("imgBackground-1-2");
+	const background22 = document.getElementsByClassName("imgBackground-2-2");
 	background12[0].style.display = "block";
 	background22[0].style.display = "none";
 	setInterval(
@@ -145,9 +145,9 @@ function periodicBackground2() {
 function periodicBackground3() {
 
 	"use strict";
-	const background13 = document.getElementsByClassName("background-1-3");
-	const background23 = document.getElementsByClassName("background-2-3");
-	const background33 = document.getElementsByClassName("background-3-3");
+	const background13 = document.getElementsByClassName("imgBackground-1-3");
+	const background23 = document.getElementsByClassName("imgBackground-2-3");
+	const background33 = document.getElementsByClassName("imgBackground-3-3");
 	background13[0].style.display = "block";
 	background23[0].style.display = "none";
 	background33[0].style.display = "none";
@@ -183,10 +183,10 @@ function periodicBackground3() {
 function periodicBackground4() {
 
 	"use strict";
-	const background14 = document.getElementsByClassName("background-1-4");
-	const background24 = document.getElementsByClassName("background-2-4");
-	const background34 = document.getElementsByClassName("background-3-4");
-	const background44 = document.getElementsByClassName("background-4-4");
+	const background14 = document.getElementsByClassName("imgBackground-1-4");
+	const background24 = document.getElementsByClassName("imgBackground-2-4");
+	const background34 = document.getElementsByClassName("imgBackground-3-4");
+	const background44 = document.getElementsByClassName("imgBackground-4-4");
 	background14[0].style.display = "block";
 	background24[0].style.display = "none";
 	background34[0].style.display = "none";
@@ -235,11 +235,11 @@ function periodicBackground4() {
 function periodicBackground5() {
 
 	"use strict";
-	const background15 = document.getElementsByClassName("background-1-5");
-	const background25 = document.getElementsByClassName("background-2-5");
-	const background35 = document.getElementsByClassName("background-3-5");
-	const background45 = document.getElementsByClassName("background-4-5");
-	const background55 = document.getElementsByClassName("background-5-5");
+	const background15 = document.getElementsByClassName("imgBackground-1-5");
+	const background25 = document.getElementsByClassName("imgBackground-2-5");
+	const background35 = document.getElementsByClassName("imgBackground-3-5");
+	const background45 = document.getElementsByClassName("imgBackground-4-5");
+	const background55 = document.getElementsByClassName("imgBackground-5-5");
 	background15[0].style.display = "block";
 	background25[0].style.display = "none";
 	background35[0].style.display = "none";
