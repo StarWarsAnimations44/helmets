@@ -154,7 +154,7 @@ th {
 }
 
 .img18001600 {top: -5.00%;}
-.img20001600 {top: -5.56%;}
+.img20001600 {top: -11%;}
 
 .tdColspan2 img {width: 37.50%;}
 .tdColspan3 img {width: 25.00%;}
@@ -165,20 +165,20 @@ th {
 /*	own color of each unit*/
 /* ================================================================================================================= */
 
-.battalion104 {background-color: #585858;}
-.battalionAttack169 {background-color: #901d18;}
-.battalionAttack212 {background-color: #ff7f27;}
-.companyTango {background-color: #688ea9;}
-.corpsElite41 {background-color: #0b3416;}
+.battalion104 {background-color: #5a5a5a;}
+.battalionAttack169 {background-color: #911e19;}
+.battalionAttack212 {background-color: #ffe628;}
+.companyTango {background-color: #698caa;}
+.corpsElite41 {background-color: #0a3214;}
 .corpsNova21 {background-color: #643264;}
-.corpsReconnaissanceMobile91 {background-color: #e21c1c;}
+.corpsReconnaissanceMobile91 {background-color: #e11e1e;}
 .corpsStar327 {background-color: #f0be28;}
-.guardCoruscent {background-color: #88001b;}
-.legion7 {background-color: #af8867;}
+.guardCoruscent {background-color: #870019;}
+.legion7 {background-color: #af8769;}
 .legion501 {background-color: #0000a0;}
-.securityKamino {background-color: #585858;}
+.securityKamino {background-color: #5a5a5a;}
 
-.niteOwls {background-color: #185387}
+.niteOwls {background-color: #195587}
 .superCommando {background-color: #64141e}
 
 /* ================================================================================================================= */

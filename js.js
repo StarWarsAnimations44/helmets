@@ -9,11 +9,8 @@
 // ================================================================================================================= //
 
 const pause = 1000; // miliseconds
-
 var backgroundIsDisplayed = true;
 var sources = [];
-var displayedBackgroundColor = "transparent";
-var hiddenBackgroundColor = "#ffffff";
 const helmetsBackgrounds = document.getElementsByClassName("imgBackground");
 const buttons = document.getElementsByTagName("button");
 
@@ -24,6 +21,8 @@ const buttons = document.getElementsByTagName("button");
 function toggleBackground() {
 
 	"use strict";
+	const displayedBackgroundColor = "transparent";
+	const hiddenBackgroundColor = "#ffffff";
 	backgroundIsDisplayed = !backgroundIsDisplayed;
 	var backgroundColor = backgroundIsDisplayed ? displayedBackgroundColor : hiddenBackgroundColor;
 	for (var i = 0; i < buttons.length; i++) {
@@ -65,6 +64,7 @@ function randomSource() {
 		"republic/common/CT_Sergeant_I.png",
 		"republic/common/CT_tro_I.png",
 		"republic/common/CT_tro_II.png",
+		"mandalorians/common/AxeWolves.png",
 		"mandalorians/common/BobaFett.png",
 		"mandalorians/common/DinDjarin.png",
 		"mandalorians/common/JangoFett.png",
@@ -85,8 +85,7 @@ function randomSource() {
 function englishTitleTo(language) {
 
 	"use strict";
-	const englishTitle = document.getElementById("englishTitle");
-	var languageTitle = document.getElementById("englishTitle");
+	var languageTitle;
 	switch (language) {
 		case "aurebesh":
 			languageTitle = document.getElementById("aurebeshTitle");
