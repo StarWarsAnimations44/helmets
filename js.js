@@ -64,7 +64,7 @@ function randomSource() {
 		"republic/common/CT_Sergeant_I.png",
 		"republic/common/CT_tro_I.png",
 		"republic/common/CT_tro_II.png",
-		"mandalorians/common/AxeWolves.png",
+		"mandalorians/common/AxeWoves.png",
 		"mandalorians/common/BobaFett.png",
 		"mandalorians/common/DinDjarin.png",
 		"mandalorians/common/JangoFett.png",
