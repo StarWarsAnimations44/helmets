@@ -25,15 +25,13 @@ function toggleBackground() {
 	const hiddenBackgroundColor = "#ffffff";
 	backgroundIsDisplayed = !backgroundIsDisplayed;
 	var backgroundColor = backgroundIsDisplayed ? displayedBackgroundColor : hiddenBackgroundColor;
-	for (var i = 0; i < buttons.length; i++) {
-		buttons[i].style.backgroundColor = backgroundColor;
-	}
+	for (var i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
 	for (var j = 0; j < helmetsBackgrounds.length; j++) {
 		if (backgroundIsDisplayed) {
 			helmetsBackgrounds[j].src = sources[j];
 		} else {
 			sources[j] = helmetsBackgrounds[j].src;
-			helmetsBackgrounds[j].src = "models/void.png";
+			helmetsBackgrounds[j].src = "../common/void.png";
 		}
 	}
 
@@ -45,25 +43,26 @@ function randomSource() {
 	const helmets = document.getElementsByClassName("randomHelmets");
 	const defaultSource = "common/random.png";
 	const helmetsSources = [
-		"republic/common/CC_tro_I.png",
-		"republic/common/CT_arc_I.png",
-		"republic/common/CT_arc_II.png",
-		"republic/common/CT_arf_I.png",
-		"republic/common/CT_arf_II.png",
-		"republic/common/CT_bar_II.png",
-		"republic/common/CT_Captain_I.png",
-		"republic/common/CT_col_I.png",
-		"republic/common/CT_col_II.png",
-		"republic/common/CT_eng_II.png",
-		"republic/common/CT_Lieutenant_I.png",
-		"republic/common/CT_par_II.png",
-		"republic/common/CT_pil_I.png",
-		"republic/common/CT_pil_IIA.png",
-		"republic/common/CT_pil_IIB.png",
-		"republic/common/CT_sco_II.png",
-		"republic/common/CT_Sergeant_I.png",
-		"republic/common/CT_tro_I.png",
-		"republic/common/CT_tro_II.png",
+		"republic/common/cc_tro_I.png",
+		"republic/common/ct_arc_I.png",
+		"republic/common/ct_arc_II.png",
+		"republic/common/ct_arf_I.png",
+		"republic/common/ct_arf_II.png",
+		"republic/common/ct_bar_II.png",
+		"republic/common/ct_Captain_I.png",
+		"republic/common/ct_col_I.png",
+		"republic/common/ct_col_II.png",
+		"republic/common/ct_eng_I.png",
+		"republic/common/ct_eng_II.png",
+		"republic/common/ct_Lieutenant_I.png",
+		"republic/common/ct_par_II.png",
+		"republic/common/ct_pil_I.png",
+		"republic/common/ct_pil_IIA.png",
+		"republic/common/ct_pil_IIB.png",
+		"republic/common/ct_sco_II.png",
+		"republic/common/ct_Sergeant_I.png",
+		"republic/common/ct_tro_I.png",
+		"republic/common/ct_tro_II.png",
 		"mandalorians/common/AxeWoves.png",
 		"mandalorians/common/BobaFett.png",
 		"mandalorians/common/DinDjarin.png",
@@ -88,10 +87,10 @@ function englishTitleTo(language) {
 	var languageTitle;
 	switch (language) {
 		case "aurebesh":
-			languageTitle = document.getElementById("aurebeshTitle");
+			languageTitle = aurebeshTitle;
 			break;
 		case "mandoa":
-			languageTitle = document.getElementById("mandoaTitle");
+			languageTitle = mandoaTitle;
 			break;
 	}
 	englishTitle.style.display = "block";
@@ -115,13 +114,35 @@ function englishTitleTo(language) {
 	// periodic backgrounds
 // ================================================================================================================= //
 
+function multiplePeriodicBackgrounds(spanList) {
+
+	for (var i = spanList.length - 1; i >= 0; i--) {
+		switch (spanList[i]) {
+			case 2:
+				periodicBackground2();
+				break;
+			case 3:
+				periodicBackground3();
+				break;
+			case 4:
+				periodicBackground4();
+				break;
+			case 5:
+				periodicBackground5();
+				break;
+			case 16:
+				periodicBackground16();
+				break;
+		}
+	}
+
+}
+
 function periodicBackground2() {
 
 	"use strict";
 	const background12 = document.getElementsByClassName("imgBackground-1-2");
 	const background22 = document.getElementsByClassName("imgBackground-2-2");
-	background12[0].style.display = "block";
-	background22[0].style.display = "none";
 	setInterval(
 		function() {
 			if (background22[0].style.display === "none") {
@@ -147,9 +168,6 @@ function periodicBackground3() {
 	const background13 = document.getElementsByClassName("imgBackground-1-3");
 	const background23 = document.getElementsByClassName("imgBackground-2-3");
 	const background33 = document.getElementsByClassName("imgBackground-3-3");
-	background13[0].style.display = "block";
-	background23[0].style.display = "none";
-	background33[0].style.display = "none";
 	setInterval(
 		function() {
 			if (background33[0].style.display === "none") {
@@ -182,48 +200,38 @@ function periodicBackground3() {
 function periodicBackground4() {
 
 	"use strict";
-	const background14 = document.getElementsByClassName("imgBackground-1-4");
-	const background24 = document.getElementsByClassName("imgBackground-2-4");
-	const background34 = document.getElementsByClassName("imgBackground-3-4");
-	const background44 = document.getElementsByClassName("imgBackground-4-4");
-	background14[0].style.display = "block";
-	background24[0].style.display = "none";
-	background34[0].style.display = "none";
-	background44[0].style.display = "none";
+	var background4 = [];
+	for (var i = 4; i > 0; i--) {background4.push(document.getElementsByClassName("imgBackground-" + i + "-4"))}
+	const length = background4[0].length;
 	setInterval(
 		function() {
-			if (background44[0].style.display === "none") {
-				if (background34[0].style.display === "none") {
-					if (background24[0].style.display === "none") {
-						for (var i = background14.length - 1; i >= 0; i--) {
-							background14[i].style.display = "none";
-							background24[i].style.display = "block";
-							background34[i].style.display = "none";
-							background44[i].style.display = "none";
-						}
-					} else {
-						for (var i = background14.length - 1; i >= 0; i--) {
-							background14[i].style.display = "none";
-							background24[i].style.display = "none";
-							background34[i].style.display = "block";
-							background44[i].style.display = "none";
-						}
+			switch ("block") {
+				case background4[0][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background4[0][i].style.display = "none";
+						background4[1][i].style.display = "block";
 					}
-				} else {
-					for (var i = background14.length - 1; i >= 0; i--) {
-						background14[i].style.display = "none";
-						background24[i].style.display = "none";
-						background34[i].style.display = "none";
-						background44[i].style.display = "block";
+					break;
+				case background4[1][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background4[1][i].style.display = "none";
+						background4[2][i].style.display = "block";
 					}
-				}
-			} else {
-				for (var i = background14.length - 1; i >= 0; i--) {
-					background14[i].style.display = "block";
-					background24[i].style.display = "none";
-					background34[i].style.display = "none";
-					background44[i].style.display = "none";
-				}
+					break;
+				case background4[2][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background4[2][i].style.display = "none";
+						background4[3][i].style.display = "block";
+					}
+					break;
+				default:
+					for (var i = length - 1; i >= 0; i--) {
+						background4[0][i].style.display = "block";
+						background4[1][i].style.display = "none";
+						background4[2][i].style.display = "none";
+						background4[3][i].style.display = "none";
+					}
+					break;
 			}
 		},
 		pause
@@ -234,64 +242,91 @@ function periodicBackground4() {
 function periodicBackground5() {
 
 	"use strict";
-	const background15 = document.getElementsByClassName("imgBackground-1-5");
-	const background25 = document.getElementsByClassName("imgBackground-2-5");
-	const background35 = document.getElementsByClassName("imgBackground-3-5");
-	const background45 = document.getElementsByClassName("imgBackground-4-5");
-	const background55 = document.getElementsByClassName("imgBackground-5-5");
-	background15[0].style.display = "block";
-	background25[0].style.display = "none";
-	background35[0].style.display = "none";
-	background45[0].style.display = "none";
-	background55[0].style.display = "none";
+	var background5 = [];
+	for (var i = 5; i > 0; i--) {background5.push(document.getElementsByClassName("imgBackground-" + i + "-5"))}
+	const length = background5[0].length;
 	setInterval(
 		function() {
-			if (background55[0].style.display === "none") {
-				if (background45[0].style.display === "none") {
-					if (background35[0].style.display === "none") {
-						if (background25[0].style.display === "none") {
-							for (var i = background15.length - 1; i >= 0; i--) {
-								background15[i].style.display = "none";
-								background25[i].style.display = "block";
-								background35[i].style.display = "none";
-								background45[i].style.display = "none";
-								background55[i].style.display = "none";
-							}
-						} else {
-							for (var i = background15.length - 1; i >= 0; i--) {
-								background15[i].style.display = "none";
-								background25[i].style.display = "none";
-								background35[i].style.display = "block";
-								background45[i].style.display = "none";
-								background55[i].style.display = "none";
-							}
-						}
-					} else {
-						for (var i = background15.length - 1; i >= 0; i--) {
-							background15[i].style.display = "none";
-							background25[i].style.display = "none";
-							background35[i].style.display = "none";
-							background45[i].style.display = "block";
-							background55[i].style.display = "none";
-						}
+			switch ("block") {
+				case background5[0][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background5[0][i].style.display = "none";
+						background5[1][i].style.display = "block";
 					}
-				} else {
-					for (var i = background15.length - 1; i >= 0; i--) {
-						background15[i].style.display = "none";
-						background25[i].style.display = "none";
-						background35[i].style.display = "none";
-						background45[i].style.display = "none";
-						background55[i].style.display = "block";
+					break;
+				case background5[1][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background5[1][i].style.display = "none";
+						background5[2][i].style.display = "block";
 					}
-				}
-			} else {
-				for (var i = background15.length - 1; i >= 0; i--) {
-					background15[i].style.display = "block";
-					background25[i].style.display = "none";
-					background35[i].style.display = "none";
-					background45[i].style.display = "none";
-					background55[i].style.display = "none";
-				}
+					break;
+				case background5[2][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background5[2][i].style.display = "none";
+						background5[3][i].style.display = "block";
+					}
+					break;
+				case background5[3][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background5[3][i].style.display = "none";
+						background5[4][i].style.display = "block";
+					}
+					break;
+				default:
+					for (var i = length - 1; i >= 0; i--) {
+						background5[0][i].style.display = "block";
+						background5[1][i].style.display = "none";
+						background5[2][i].style.display = "none";
+						background5[3][i].style.display = "none";
+						background5[4][i].style.display = "none";
+					}
+					break;
+			}
+		},
+		pause
+	);
+
+}
+
+function periodicBackground16() {
+
+	"use strict";
+	var background16 = [];
+	for (var i = 16; i > 0; i--) {background16.push(document.getElementsByClassName("imgBackground-" + i + "-16"))}
+	const length = background16[0].length;
+	setInterval(
+		function() {
+			switch ("block") {
+				case background16[0][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background16[0][i].style.display = "none";
+						background16[1][i].style.display = "block";
+					}
+					break;
+				case background16[1][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background16[1][i].style.display = "none";
+						background16[2][i].style.display = "block";
+					}
+					break;
+				case background16[2][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background16[2][i].style.display = "none";
+						background16[3][i].style.display = "block";
+					}
+					break;
+				case background16[3][0].style.display:
+					for (var i = length - 1; i >= 0; i--) {
+						background16[3][i].style.display = "none";
+						background16[4][i].style.display = "block";
+					}
+					break;
+				default:
+					for (var i = length - 1; i >= 0; i--) {
+						background16[0][i].style.display = "block";
+						for (var j = 15; j > 0; j--) {background16[j][i].style.display = "none";}
+					}
+					break;
 			}
 		},
 		pause
