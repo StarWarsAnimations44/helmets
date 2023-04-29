@@ -40,7 +40,7 @@ function toggleBackground() {
 function randomSource() {
 
 	"use strict";
-	const helmets = document.getElementsByClassName("randomHelmets");
+	const helmets = document.getElementsByClassName("imgRandomHelmet");
 	const defaultSource = "common/random.png";
 	const helmetsSources = [
 		"republic/common/cc_tro_I.png",
