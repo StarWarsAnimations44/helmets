@@ -44,6 +44,7 @@ function randomSource() {
 	const defaultSource = "common/random.png";
 	const helmetsSources = [
 		"republic/common/arc_I.png",
+		
 		"republic/common/arc_II.png",
 		"republic/common/arf_I.png",
 		"republic/common/arf_II.png",
