@@ -133,14 +133,6 @@ th {
 
 .imgRandomHelmet {width: 25%;}
 
-#mandoaTitle .imgMandoaNumbers {
-	width: 2%;
-	margin-top: -0.5%;
-	margin-bottom: -1.3%;
-	margin-right: -0.5%;
-	margin-left: -0.5%;
-}
-
 .tableText {
 	width: 80%;
 	margin: auto;
@@ -194,6 +186,8 @@ th {
 /*	id = ...*/
 /* ================================================================================================================= */
 
+#divTable {overflow-x: auto;}
+
 /* ================================================================================================================= */
 /*	nav menus*/
 /* ================================================================================================================= */
@@ -222,6 +216,14 @@ th {
 
 #mandoaTitle img {
 	width: 3%;
+	margin-top: -0.5%;
+	margin-bottom: -1.3%;
+	margin-right: -0.5%;
+	margin-left: -0.5%;
+}
+
+#mandoaTitle .imgMandoaNumbers {
+	width: 2%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;
 	margin-right: -0.5%;
