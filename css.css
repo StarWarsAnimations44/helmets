@@ -62,6 +62,7 @@ h1, .divTitle {
 iframe {
 	border: 0;
 	width: 100%;
+	aspect-ratio: 5266 / 1000;
 }
 
 img {
@@ -103,6 +104,12 @@ table {
 td {width: 16.67%;}
 .tableText td {padding: 1%;}
 
+#tableValidation td {
+	border: 0;
+	box-shadow: 0 0;
+	padding: 5%;
+}
+
 .trText td, .tdText {
 	padding: 2px 5px;
 	border: 2px solid #abcdef;
@@ -137,6 +144,8 @@ th {
 	width: 80%;
 	margin: auto;
 }
+
+.divValidation:hover {cursor: pointer;}
 
 /* ================================================================================================================= */
 /*	foregrounds management*/
@@ -188,15 +197,25 @@ th {
 
 #divTable {overflow-x: auto;}
 
+#tableValidation {
+	background-color: transparent;
+	border: 0;
+	box-shadow: 0 0;
+}
+
 /* ================================================================================================================= */
-/*	nav menus*/
+/*	nav HTML files*/
 /* ================================================================================================================= */
 
-#iframe {aspect-ratio: 5266 / 1000;}
-#iframeMandalorians {aspect-ratio: 4575 / 1000;}
-#iframeMandaloriansUnits {aspect-ratio: 3752 / 1000;}
-#iframeRepublic {aspect-ratio: 4575 / 1000;}
-#iframeRepublicUnits {aspect-ratio: 1866 / 1000;}
+#navMandalorians {aspect-ratio: 4575 / 1000;}
+#navMandaloriansUnits {aspect-ratio: 3752 / 1000;}
+#navRepublic {aspect-ratio: 4575 / 1000;}
+#navRepublicUnits {aspect-ratio: 1866 / 1000;}
+
+#navValidation {
+	width: 25%;
+	aspect-ratio: 3200 / 1000;
+}
 
 /* ================================================================================================================= */
 /*	languages*/
