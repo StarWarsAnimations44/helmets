@@ -110,7 +110,6 @@ function englishTitleTo(language) {
 
 }
 
-
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets";
 const urlJs = "https://js.js";
