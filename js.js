@@ -9,13 +9,34 @@
 // ================================================================================================================= //
 
 const pause = 1000; // miliseconds
-const displayedBackgroundColor = "transparent";
-const hiddenBackgroundColor = "#ffffff";
-var backgroundIsDisplayed = true;
+
+// ================================================================================================================= //
+	// functions
+// ================================================================================================================= //
+
 var sources = [];
-var languageTitle;
+var backgroundIsDisplayed = true;
+
+function toggleBackground() {
+
+	"use strict";
+	backgroundIsDisplayed = !backgroundIsDisplayed;
+	const helmetsBackgrounds = document.getElementsByClassName("imgBackground");
+	var backgroundColor = backgroundIsDisplayed ? "transparent" : "#ffffff";
+	const buttons = document.getElementsByTagName("button");
+	for (var i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
+	for (var j = 0; j < helmetsBackgrounds.length; j++) {
+		if (backgroundIsDisplayed) {
+			helmetsBackgrounds[j].src = sources[j];
+		} else {
+			sources[j] = helmetsBackgrounds[j].src;
+			helmetsBackgrounds[j].src = "../common/void.png";
+		}
+	}
+
+}
+
 const helmets = document.getElementsByClassName("imgRandomHelmet");
-const defaultSource = "common/random.png";
 const helmetsSources = [
 	"republic/common/arc_I.png",
 	"republic/common/arc_II.png",
@@ -44,29 +65,6 @@ const helmetsSources = [
 	"mandalorians/common/PreVizsla.png"
 ];
 
-// ================================================================================================================= //
-	// functions
-// ================================================================================================================= //
-
-function toggleBackground() {
-
-	"use strict";
-	backgroundIsDisplayed = !backgroundIsDisplayed;
-	const helmetsBackgrounds = document.getElementsByClassName("imgBackground");
-	var backgroundColor = backgroundIsDisplayed ? displayedBackgroundColor : hiddenBackgroundColor;
-	const buttons = document.getElementsByTagName("button");
-	for (var i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
-	for (var j = 0; j < helmetsBackgrounds.length; j++) {
-		if (backgroundIsDisplayed) {
-			helmetsBackgrounds[j].src = sources[j];
-		} else {
-			sources[j] = helmetsBackgrounds[j].src;
-			helmetsBackgrounds[j].src = "../common/void.png";
-		}
-	}
-
-}
-
 function randomSource() {
 
 	"use strict";
@@ -81,6 +79,8 @@ function randomSource() {
 	);
 
 }
+
+var languageTitle;
 
 function englishTitleTo(language) {
 
@@ -113,6 +113,7 @@ function englishTitleTo(language) {
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets";
 const urlJs = "https://js.js";
+const parentPageTitle = window.parent.document.title;
 const pages = {
 	"Home": "index.html",
 	"Mandalorians": "mandalorians/common.html",
@@ -139,7 +140,6 @@ const pages = {
 		"501st Legion": "republic/units/legion501.html",
 		"Kamino Security": "republic/units/securityKamino.html"
 };
-const parentPageTitle = window.parent.document.title;
 
 function validation(language) {
 
