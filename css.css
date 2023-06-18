@@ -5,7 +5,7 @@
 /*===================================================================================================================*/
 
 /*===================================================================================================================*/
-/*	<...>*/
+/*                                                                                                                   */
 /*===================================================================================================================*/
 
 a {
@@ -14,7 +14,6 @@ a {
 	text-decoration: none;
 	transition: color 0.1s ease-in-out;
 }
-
 a:hover {color: #abcdef;}
 
 body {
@@ -37,7 +36,6 @@ button {
 	font-size: 95%;
 	text-shadow: 2px 2px 2px #000000;
 }
-
 button:hover {
 	cursor: pointer;
 	border: 4px #fedcba solid;
@@ -45,6 +43,8 @@ button:hover {
 }
 
 div {position: relative;}
+.divValidation:hover {cursor: pointer;}
+#divTable {overflow-x: auto;}
 
 h1, .divTitle {
 	padding: 10px 10px;
@@ -69,11 +69,24 @@ img {
 	width: 75%;
 	filter: drop-shadow(3px 3px 1px #000000);
 }
+.imgIcon {
+	width: 3%;
+	filter: drop-shadow(0px 0px 1px #ffffff);
+}
+.imgRandomHelmet {width: 25%;}
 
 nav {
 	text-align: left;
 	font-size: 60%;
 	font-weight: bold;
+}
+#navMandalorians {aspect-ratio: 4575 / 1000;}
+#navMandaloriansUnits {aspect-ratio: 3752 / 1000;}
+#navRepublic {aspect-ratio: 4575 / 1000;}
+#navRepublicUnits {aspect-ratio: 1866 / 1000;}
+#navValidation {
+	width: 25%;
+	aspect-ratio: 3200 / 1000;
 }
 
 p {
@@ -87,8 +100,14 @@ p {
 	background-color: rgba(0, 0, 0, 0.25);
 	padding: 1% 1%;
 }
+.pDetails {
+	text-align: center;
+	text-indent: 0;
+}
 
 span {font-family: baskerville old face;}
+.spanSeparation {padding-right: 2%;}
+
 table {
 	border: 3px solid #abcdef;
 	border-radius: 22px;
@@ -99,21 +118,28 @@ table {
 	background-size: cover;
 	overflow-x: auto;
 }
+.tableText {
+	width: 80%;
+	margin: auto;
+}
+#tableValidation {
+	background-color: transparent;
+	border: 0;
+	box-shadow: 0 0;
+}
 
 td {width: 16.67%;}
 .tableText td {padding: 1%;}
-
-#tableValidation td {
-	border: 0;
-	box-shadow: 0 0;
-	padding: 5%;
-}
-
 .trText td, .tdText {
 	padding: 2px 5px;
 	border: 2px solid #abcdef;
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px #000000;
+}
+#tableValidation td {
+	border: 0;
+	box-shadow: 0 0;
+	padding: 5%;
 }
 
 th {
@@ -122,30 +148,6 @@ th {
 	padding: 10px 10px;
 	box-shadow: 2px 2px 2px #000000;
 }
-
-/*===================================================================================================================*/
-/*	class = ...*/
-/*===================================================================================================================*/
-
-.pDetails {
-	text-align: center;
-	text-indent: 0;
-}
-
-.imgIcon {
-	width: 3%;
-	filter: drop-shadow(0px 0px 1px #ffffff);
-}
-
-.imgRandomHelmet {width: 25%;}
-.spanSeparation {padding-right: 2%;}
-
-.tableText {
-	width: 80%;
-	margin: auto;
-}
-
-.divValidation:hover {cursor: pointer;}
 
 /*===================================================================================================================*/
 /*	foregrounds management*/
@@ -190,32 +192,6 @@ th {
 
 .niteOwls {background-color: #195587}
 .superCommando {background-color: #64141e}
-
-/*===================================================================================================================*/
-/*	id = ...*/
-/*===================================================================================================================*/
-
-#divTable {overflow-x: auto;}
-
-#tableValidation {
-	background-color: transparent;
-	border: 0;
-	box-shadow: 0 0;
-}
-
-/*===================================================================================================================*/
-/*	nav HTML files*/
-/*===================================================================================================================*/
-
-#navMandalorians {aspect-ratio: 4575 / 1000;}
-#navMandaloriansUnits {aspect-ratio: 3752 / 1000;}
-#navRepublic {aspect-ratio: 4575 / 1000;}
-#navRepublicUnits {aspect-ratio: 1866 / 1000;}
-
-#navValidation {
-	width: 25%;
-	aspect-ratio: 3200 / 1000;
-}
 
 /*===================================================================================================================*/
 /*	languages*/
