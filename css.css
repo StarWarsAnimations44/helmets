@@ -43,10 +43,10 @@ button:hover {
 }
 
 div {position: relative;}
-.divValidation:hover {cursor: pointer;}
-#divTable {overflow-x: auto;}
+.div-validation:hover {cursor: pointer;}
+#div-table {overflow-x: auto;}
 
-h1, .divTitle {
+h1, .div-title {
 	padding: 10px 10px;
 	border-radius: 30px;
 	color: #ffffff;
@@ -69,22 +69,22 @@ img {
 	width: 75%;
 	filter: drop-shadow(3px 3px 1px #000000);
 }
-.imgIcon {
+.img-icon {
 	width: 3%;
 	filter: drop-shadow(0px 0px 1px #ffffff);
 }
-.imgRandomHelmet {width: 25%;}
+.img-random-helmet {width: 25%;}
 
 nav {
 	text-align: left;
 	font-size: 60%;
 	font-weight: bold;
 }
-#navMandalorians {aspect-ratio: 4575 / 1000;}
-#navMandaloriansUnits {aspect-ratio: 3752 / 1000;}
-#navRepublic {aspect-ratio: 4575 / 1000;}
-#navRepublicUnits {aspect-ratio: 1866 / 1000;}
-#navValidation {
+#nav-mandalorians {aspect-ratio: 4575 / 1000;}
+#nav-mandalorians-units {aspect-ratio: 3752 / 1000;}
+#nav-republic {aspect-ratio: 4575 / 1000;}
+#nav-republic-units {aspect-ratio: 1866 / 1000;}
+#nav-validation {
 	width: 25%;
 	aspect-ratio: 3200 / 1000;
 }
@@ -100,13 +100,13 @@ p {
 	background-color: rgba(0, 0, 0, 0.25);
 	padding: 1% 1%;
 }
-.pDetails {
+.p-details {
 	text-align: center;
 	text-indent: 0;
 }
 
 span {font-family: baskerville old face;}
-.spanSeparation {padding-right: 2%;}
+.span-separation {padding-right: 2%;}
 
 table {
 	border: 3px solid #abcdef;
@@ -118,25 +118,25 @@ table {
 	background-size: cover;
 	overflow-x: auto;
 }
-.tableText {
+.table-text {
 	width: 80%;
 	margin: auto;
 }
-#tableValidation {
+#table-validation {
 	background-color: transparent;
 	border: 0;
 	box-shadow: 0 0;
 }
 
 td {width: 16.67%;}
-.tableText td {padding: 1%;}
-.trText td, .tdText {
+.table-text td {padding: 1%;}
+.tr-text td, .td-text {
 	padding: 2px 5px;
 	border: 2px solid #abcdef;
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px #000000;
 }
-#tableValidation td {
+#table-validation td {
 	border: 0;
 	box-shadow: 0 0;
 	padding: 5%;
@@ -153,63 +153,67 @@ th {
 /*	foregrounds management*/
 /*===================================================================================================================*/
 
-.imgForeground {left: 12.50%;}
-.imgForegroundColspan2 {left: 31.30%;}
-.imgForegroundColspan3 {left: 37.50%;}
-.imgForegroundColspan4 {left: 40.80%;}
-.imgForegroundColspan5 {left: 42.55%;}
+.img-foreground {left: 12.50%;}
+.img-foreground-colspan-2 {left: 31.30%;}
+.img-foreground-colspan-3 {left: 37.50%;}
+.img-foreground-colspan-4 {left: 40.80%;}
+.img-foreground-colspan-5 {left: 42.55%;}
 
-.imgForeground, .imgForegroundColspan2, .imgForegroundColspan3, .imgForegroundColspan4, .imgForegroundColspan5 {
+.img-foreground,
+.img-foreground-colspan-2,
+.img-foreground-colspan-3,
+.img-foreground-colspan-4,
+.img-foreground-colspan-5 {
 	position: absolute;
 	top: 0;
 	filter: drop-shadow(0 0 0);
 }
 
-.img18001600 {top: -5.00%;}
-.img20001600 {top: -11%;}
+.img-1800x1600 {top: -5.00%;}
+.img-2000x1600 {top: -11%;}
 
-.tdColspan2 img {width: 37.50%;}
-.tdColspan3 img {width: 25.00%;}
-.tdColspan4 img {width: 18.50%;}
-.tdColspan5 img {width: 14.90%;}
+.td-colspan-2 img {width: 37.50%;}
+.td-colspan-3 img {width: 25.00%;}
+.td-colspan-4 img {width: 18.50%;}
+.td-colspan-5 img {width: 14.90%;}
 
 /*===================================================================================================================*/
 /*	own color of each unit*/
 /*===================================================================================================================*/
 
-.battalion104 {background-color: #5a5a5a;}
-.battalionAttack169 {background-color: #911e19;}
-.battalionAttack212 {background-color: #ff7f27;}
-.companyTango {background-color: #698caa;}
-.corpsElite41 {background-color: #0a3214;}
-.corpsNova21 {background-color: #643264;}
-.corpsReconnaissanceMobile91 {background-color: #e11e1e;}
-.corpsStar327 {background-color: #f0be28;}
-.guardCoruscent {background-color: #870019;}
-.legion7 {background-color: #af8769;}
-.legion501 {background-color: #0000a0;}
-.securityKamino {background-color: #5a5a5a;}
+.battalion-104 {background-color: #5a5a5a;}
+.battalion-attack-169 {background-color: #911e19;}
+.battalion-attack-212 {background-color: #ff7f27;}
+.company-tango {background-color: #698caa;}
+.corps-elite-41 {background-color: #0a3214;}
+.corps-nova-21 {background-color: #643264;}
+.corps-reconnaissance-mobile-91 {background-color: #e11e1e;}
+.corps-star-327 {background-color: #f0be28;}
+.guard-coruscent {background-color: #870019;}
+.legion-7 {background-color: #af8769;}
+.legion-501 {background-color: #0000a0;}
+.security-kamino {background-color: #5a5a5a;}
 
-.niteOwls {background-color: #195587}
-.superCommando {background-color: #64141e}
+.nite-owls {background-color: #195587}
+.super-commando {background-color: #64141e}
 
 /*===================================================================================================================*/
 /*	languages*/
 /*===================================================================================================================*/
 
-#aurebeshTitle img {
+#div-aurebesh-title img {
 	width: 5%;
 	margin-bottom: -0.5%;
 	margin-right: -0.5%;
 	margin-left: -0.5%;
 }
 
-#aurebeshTitle .imgAurebeshNumbers {
+#div-aurebesh-title .img-aurebesh-numbers {
 	width: 4%;
 	margin-bottom: -0.8%;
 }
 
-#mandoaTitle img {
+#div-mandoa-title img {
 	width: 3%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;
@@ -217,7 +221,7 @@ th {
 	margin-left: -0.5%;
 }
 
-#mandoaTitle .imgMandoaNumbers {
+#div-mandoa-title .img-mandoa-numbers {
 	width: 2%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;

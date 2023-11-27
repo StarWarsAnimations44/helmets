@@ -36,7 +36,7 @@ function toggleBackground() {
 
 }
 
-const helmets = document.getElementsByClassName("imgRandomHelmet");
+const helmets = document.getElementsByClassName("img-random-helmet");
 const helmetsSources = [
 	"republic/common/arc_I.png",
 	"republic/common/arc_II.png",
@@ -87,10 +87,10 @@ function englishTitleTo(language) {
 	"use strict";
 	switch (language) {
 		case "aurebesh":
-			languageTitle = aurebeshTitle;
+			languageTitle = getElementById("div-aurebesh-title");
 			break;
 		case "mandoa":
-			languageTitle = mandoaTitle;
+			languageTitle = getElementById("div-mandoa-title");
 			break;
 	}
 	englishTitle.style.display = "block";
@@ -120,25 +120,25 @@ const pages = {
 	"Accessories – Mandalorians": "mandalorians/accessories.html",
 	"Paintings – Mandalorians": "mandalorians/paintings.html",
 	"Units – Mandalorians": "mandalorians/units.html",
-		"Nite Owls": "mandalorians/units/niteOwls.html",
-		"Super Commando": "mandalorians/units/superCommando.html",
+		"Nite Owls": "mandalorians/units/nite-owls.html",
+		"Super Commando": "mandalorians/units/super-commando.html",
 	"Republic": "republic/common.html",
 	"Accessories – Republic": "republic/accessories.html",
 	"Paintings – Republic": "republic/paintings.html",
 	"Units – Republic": "republic/units.html",
-		"104th Battalion": "republic/units/battalion104.html",
-		"169th Attack Battalion": "republic/units/battalionAttack169.html",
-		"212th Attack Battalion": "republic/units/battalionAttack212.html",
-		"Horn Company": "republic/units/companyHorn.html",
-		"Tango Company": "republic/units/companyTango.html",
-		"41st Elite Corps": "republic/units/corpsElite41.html",
-		"21st Nova Corps": "republic/units/corpsNova21.html",
-		"91st Mobile Reconnaissance Corps": "republic/units/corpsReconnaissanceMobile91.html",
-		"327th Star Corps": "republic/units/corpsStar327.html",
-		"Coruscent Guard": "republic/units/guardCoruscent.html",
-		"7th Legion": "republic/units/legion7.html",
-		"501st Legion": "republic/units/legion501.html",
-		"Kamino Security": "republic/units/securityKamino.html"
+		"104th Battalion": "republic/units/battalion-104.html",
+		"169th Attack Battalion": "republic/units/battalion-attack-169.html",
+		"212th Attack Battalion": "republic/units/battalion-attack-212.html",
+		"Horn Company": "republic/units/company-horn.html",
+		"Tango Company": "republic/units/company-tango.html",
+		"41st Elite Corps": "republic/units/corps-elite-41.html",
+		"21st Nova Corps": "republic/units/corps-nova-21.html",
+		"91st Mobile Reconnaissance Corps": "republic/units/corps-reconnaissance-mobile-91.html",
+		"327th Star Corps": "republic/units/corps-star-327.html",
+		"Coruscent Guard": "republic/units/guard-coruscent.html",
+		"7th Legion": "republic/units/legion-7.html",
+		"501st Legion": "republic/units/legion-501.html",
+		"Kamino Security": "republic/units/security-kamino.html"
 };
 
 function validation(language) {
