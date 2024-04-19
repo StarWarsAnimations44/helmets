@@ -38,6 +38,15 @@ function toggleBackground() {
 
 const helmets = document.getElementsByClassName("img-random-helmet");
 const helmetsSources = [
+	"empire/common/coa.png",
+	"empire/common/pur.png",
+	
+	"mandalorians/common/AxeWoves.png",
+	"mandalorians/common/BobaFett.png",
+	"mandalorians/common/DinDjarin.png",
+	"mandalorians/common/JangoFett.png",
+	"mandalorians/common/PreVizsla.png",
+
 	"republic/common/arc_I.png",
 	"republic/common/arc_II.png",
 	"republic/common/arf_I.png",
@@ -57,12 +66,8 @@ const helmetsSources = [
 	"republic/common/sco_II.png",
 	"republic/common/Sergeant_tro_I.png",
 	"republic/common/tro_I.png",
-	"republic/common/tro_II.png",
-	"mandalorians/common/AxeWoves.png",
-	"mandalorians/common/BobaFett.png",
-	"mandalorians/common/DinDjarin.png",
-	"mandalorians/common/JangoFett.png",
-	"mandalorians/common/PreVizsla.png"
+	"republic/common/tro_II.png"
+
 ];
 
 function randomSource() {
@@ -82,27 +87,27 @@ function randomSource() {
 
 var languageTitle;
 
-function englishTitleTo(language) {
+function englishTo(language) {
 
 	"use strict";
 	switch (language) {
 		case "aurebesh":
-			languageTitle = getElementById("div-aurebesh-title");
+			languageTitle = getElementById("aurebesh");
 			break;
 		case "mandoa":
-			languageTitle = getElementById("div-mandoa-title");
+			languageTitle = getElementById("mandoa-title");
 			break;
 	}
-	englishTitle.style.display = "block";
+	english.style.display = "block";
 	languageTitle.style.display = "none";
 	setInterval(
 		function() {
 			if (languageTitle.style.display === "none") {
 				languageTitle.style.display = "block";
-				englishTitle.style.display = "none";
+				english.style.display = "none";
 			} else {
 				languageTitle.style.display = "none";
-				englishTitle.style.display = "block";
+				english.style.display = "block";
 			}
 		},
 		pause
@@ -116,12 +121,17 @@ const urlJs = "https://js.js";
 const parentPageTitle = window.parent.document.title;
 const pages = {
 	"Home": "index.html",
+
+	"Empire": "empire/common.html",
+	"Paintings – Empire": "empire/paintings.html",
+
 	"Mandalorians": "mandalorians/common.html",
 	"Accessories – Mandalorians": "mandalorians/accessories.html",
 	"Paintings – Mandalorians": "mandalorians/paintings.html",
 	"Units – Mandalorians": "mandalorians/units.html",
 		"Nite Owls": "mandalorians/units/nite-owls.html",
 		"Super Commando": "mandalorians/units/super-commando.html",
+
 	"Republic": "republic/common.html",
 	"Accessories – Republic": "republic/accessories.html",
 	"Paintings – Republic": "republic/paintings.html",

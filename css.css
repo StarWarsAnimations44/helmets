@@ -43,10 +43,10 @@ button:hover {
 }
 
 div {position: relative;}
-.div-validation:hover {cursor: pointer;}
-#div-table {overflow-x: auto;}
+.validation:hover {cursor: pointer;}
+#table {overflow-x: auto;}
 
-h1, .div-title {
+h1, .title {
 	padding: 10px 10px;
 	border-radius: 30px;
 	color: #ffffff;
@@ -80,6 +80,9 @@ nav {
 	font-size: 60%;
 	font-weight: bold;
 }
+#nav-home {aspect-ratio: 4544 / 1000}
+#nav-empire {aspect-ratio: 4575 / 1000;}
+#nav-empire-units {aspect-ratio: 1866 / 1000;}
 #nav-mandalorians {aspect-ratio: 4575 / 1000;}
 #nav-mandalorians-units {aspect-ratio: 3752 / 1000;}
 #nav-republic {aspect-ratio: 4575 / 1000;}
@@ -99,10 +102,6 @@ p {
 	text-indent: 15%;
 	background-color: rgba(0, 0, 0, 0.25);
 	padding: 1% 1%;
-}
-.p-details {
-	text-align: center;
-	text-indent: 0;
 }
 
 span {font-family: baskerville old face;}
@@ -201,19 +200,19 @@ th {
 /*	languages*/
 /*===================================================================================================================*/
 
-#div-aurebesh-title img {
+#aurebesh img {
 	width: 5%;
 	margin-bottom: -0.5%;
 	margin-right: -0.5%;
 	margin-left: -0.5%;
 }
 
-#div-aurebesh-title .img-aurebesh-numbers {
+#aurebesh .img-aurebesh-numbers {
 	width: 4%;
 	margin-bottom: -0.8%;
 }
 
-#div-mandoa-title img {
+#mandoa-title img {
 	width: 3%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;
@@ -221,7 +220,7 @@ th {
 	margin-left: -0.5%;
 }
 
-#div-mandoa-title .img-mandoa-numbers {
+#mandoa-title .img-mandoa-numbers {
 	width: 2%;
 	margin-top: -0.5%;
 	margin-bottom: -1.3%;
