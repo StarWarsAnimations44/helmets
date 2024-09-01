@@ -92,10 +92,10 @@ function englishTo(language) {
 	"use strict";
 	switch (language) {
 		case "aurebesh":
-			languageTitle = getElementById("aurebesh");
+			languageTitle = document.getElementById("aurebesh");
 			break;
 		case "mandoa":
-			languageTitle = getElementById("mandoa-title");
+			languageTitle = document.getElementById("mandoa-title");
 			break;
 	}
 	english.style.display = "block";
