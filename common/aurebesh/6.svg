@@ -14,14 +14,14 @@
 				0,-12.125 z
 			"
 			style = "
-				fill: #000000;
+				fill: #ffffff;
 				fill-opacity: 1;
 				stroke: none;
 			"
 		/>
 		<rect width = "52" height = "12" x = "6" y = "6"
 			style = "
-				fill: #000000;
+				fill: #ffffff;
 				fill-opacity: 1;
 				stroke: none;
 			"
